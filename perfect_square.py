@@ -1,7 +1,10 @@
-import math  
-num = 25  
-sqrt_num = math.sqrt(num)  
-if sqrt_num.is_integer():  
-    print("The number is a perfect square")  
-else:  
-    print("The number is not a perfect square") 
+from math import sqrt
+def p_square(x):
+    sq_root=int(sqrt(x))
+    check = (sq_root*sq_root)
+    if check==x:
+        print("it is a perfect sqare")
+    else:
+        print("it is not a perfect square")
+obj=p_square(36)
+print(obj)
